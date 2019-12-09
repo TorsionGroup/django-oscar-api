@@ -6,6 +6,13 @@ stages:
   - lint
   - test
 
+addons:
+  apt:
+    sources:
+      - travis-ci/sqlite3
+    packages:
+      - sqlite3
+
 jobs:
   fast_finish: true
 
